@@ -2,7 +2,7 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-function BrochureForm() {
+export default function BrochureForm() {
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = async (data) => {
@@ -16,7 +16,8 @@ function BrochureForm() {
     }
   };
 
-  return (
+  return (<div>
+    <h1 className="text-4xl text-blue-500">Tailwind 작동 테스트</h1>
     <form onSubmit={handleSubmit(onSubmit)}>
       <input {...register("client_name")} placeholder="이름" required />
       <input {...register("email")} placeholder="이메일" required type="email" />
@@ -29,7 +30,6 @@ function BrochureForm() {
       </label>
       <button type="submit">제출</button>
     </form>
+    </div>
   );
 }
-
-export default BrochureForm;
