@@ -2,19 +2,35 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
-import BrochureForm from './pages/BrochureForm';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Aigora from './pages/Aigora';
+import Solution from './pages/Solution';
+import Institution from './pages/Institution';
+import Introduction from './pages/Introduction';
+import Brochure from './pages/Brochure';
+import Inquiry from './pages/Inquiry';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
+      <Navbar />
       <Routes>
-        <Route path="/introduction/brochure" element={<BrochureForm />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/aigora" element={<Aigora />} />
+        <Route path="/solution" element={<Solution />} />
+        <Route path="/solution/institution" element={<Institution />} />
+        <Route path="/introduction" element={<Introduction />} />
+        <Route path="/introduction/brochure" element={<Brochure />} />
+        <Route path="/introduction/inquiry" element={<Inquiry />} />
       </Routes>
+      <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
