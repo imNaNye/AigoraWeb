@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("/assets/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.institution {
+  width: 100%;
+  font-family: "Pretendard Variable";
+}
+
+/* ================================================= */
+/* 스텝들 있는 섹션*/
+/* ================================================= */
+
+.institution-section {
+    width: 100%;
+    background: linear-gradient(180deg, #FFF 0%, #F2F2F2 100%);
+    padding: 11rem 15%;
+}
+
+.section-heading {
+    color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 3.9rem */
+    padding-bottom: 1.5rem;
+}
+
+.section-p {
+    color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 2rem */
+    padding-bottom: 8.1rem;
+}
+
+/* ================================================= */
+/* 스텝*/
+/* ================================================= */
+
+.steps {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.step-heading {
+    color: var(--orange02, #FF6E37);
+    font-family: "Pretendard Variable";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 3.25rem */
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.step-p {
+    color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 3.2rem */
+    padding-bottom: 3rem;
+}
+
+.step-description {
+    color: var(--grey02, #585858);
+    font-family: "Pretendard Variable";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 1.95rem */
+}
+
+.steps div {
+  height: 26.0625rem;
+  width: 68rem;
+  padding: 2.875rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-radius: 1.25rem;
+  margin: 0 auto;
+}
+.step1 {
+    border-radius: 1.25rem;
+    background: #F9F3EA;
+}
+
+.step2 {
+    border-radius: 1.25rem;
+    background: #FAEFDC;
+}
+
+.step3 {
+    border-radius: 1.25rem;
+    background: #FCEBCE;
+}
+
+.step4 {
+    border-radius: 1.25rem;
+    background: #FDE7C0;
+}
+
+.step5 {
+    border-radius: 1.25rem;
+    background: #FFE3B3;
+}
