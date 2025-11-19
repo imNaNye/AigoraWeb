@@ -348,19 +348,11 @@ margin-left: 1rem;
 /* 고객사 영역 */
 /* ================================================= */
 
-
-.home-customer {
-  background: #f6f6f6;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
 .customer-carousel {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
 }
 
 .customer-carousel div {
@@ -368,7 +360,6 @@ margin-left: 1rem;
   border-radius: 8px;
   padding: 1.5rem 1rem;
   min-width: 200px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 

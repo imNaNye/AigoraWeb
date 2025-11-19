@@ -20,11 +20,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Aigora />} />
         <Route path="/services/aigora" element={<Aigora />} />
-        <Route path="/solution" element={<Solution />} />
+        <Route path="/solution" element={<Institution />} />
         <Route path="/solution/institution" element={<Institution />} />
-        <Route path="/introduction" element={<Introduction />} />
+        <Route path="/introduction" element={<Brochure />} />
         <Route path="/introduction/brochure" element={<Brochure />} />
         <Route path="/introduction/inquiry" element={<Inquiry />} />
       </Routes>

@@ -1,4 +1,7 @@
 import Navbar from "../components/Navbar"
+import MacVideo from "../components/MacVideo"
+import InquiryLinkFooter from "../components/InquiryLinkFooter"
+import Improving from "../components/Improving"
 import "./home.css"
 
 export default function Home(){
@@ -18,10 +21,7 @@ export default function Home(){
             </div>
 
             {/* 동영상 데모 섹션 */}
-            <div className="home-video">
-                <img src="/assets/images/Apple iMac Retina.png" alt="동영상 프레임" />
-                {/* 실제 동영상 컴포넌트 삽입 예정 */}
-            </div>
+            <MacVideo/>
 
             {/* 어떤 조직에게 맞는지: 사용자 유형 4개 */}
             <div className="home-instruction">
@@ -122,16 +122,11 @@ export default function Home(){
                     <div>CJ 도너스캠프</div>
                 </div>
             </div> */}
+            <Improving/>
 
 
             {/* CTA 링크 영역 */}
-            <div className="home-inquiry-link">
-                <div className = "home-inquiry-link-box">
-                    <h3>AIGORA 도입과 이용에 대해<br />궁금하신가요?</h3>
-                    <button className="link-brochure-button">소개서 받기</button>
-                    <button className = "link-inquiry-button">문의하기</button>
-                </div>
-            </div>
+            <InquiryLinkFooter/>
         </div>
     )
 }
