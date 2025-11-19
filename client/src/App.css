@@ -33,6 +33,14 @@
   }
 }
 
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("/assets/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
+
 .card {
   padding: 2em;
 }

@@ -1,0 +1,447 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("/assets/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.home {
+  width: 100%;
+  font-family: "Pretendard Variable";
+}
+
+
+/* ================================================= */
+/* 인트로 영역 */
+/* ================================================= */
+
+
+.home-intro {
+  background: linear-gradient(to right, #fff, #fdf2e9);
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.home-intro-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-intro h1 {
+  color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 3.9rem */
+}
+
+.home-intro p {
+    color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 160%; /* 1.8rem */
+}
+
+.intro-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}
+
+.home-intro button {
+  display: flex;
+    width: 6.5rem;
+    height: 2.1875rem;
+    padding: 0.15819rem 0.73831rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.52738rem;
+}
+
+.intro-brochure-button {
+    border-radius: 0.31644rem;
+    border: 0.844px solid var(--grey01, #282828);
+
+    color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 1.4rem */
+}
+
+.intro-inquiry-button {
+    color: var(--white, #FFF);
+    border-radius: 0.31644rem;
+    background: var(--orange-gradient, linear-gradient(315deg, #FFAF2F 0%, #FF6620 100%));
+
+    color: var(--white, #FFF);
+    font-family: "Pretendard Variable";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 1.4rem */
+}
+
+.home-intro img {
+  width: 21.5rem;
+  flex-shrink: 0;
+}
+
+
+/* ================================================= */
+/* 영상 데모 영역 */
+/* ================================================= */
+
+
+.home-video {
+  width: 100%;
+  height: 41rem;
+  background: rgba(255, 227, 179, 0.20);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-video img {
+    width: 40.375rem;
+    height: 33.9375rem;
+    flex-shrink: 0;
+}
+
+
+/* ================================================= */
+/* 사용자 유형 소개 */
+/* ================================================= */
+
+
+.home-instruction {
+ background: linear-gradient(180deg, #FFF 0%, #F2F2F2 100%);
+  text-align: left;
+  display: flex;
+    height: 94.875rem;
+    padding: 11.8125rem 20%;
+    gap: 0.625rem;
+    align-self: stretch;
+    flex-direction: column;
+}
+
+.home-instruction h2 {
+  color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 130%; /* 3.9rem */
+    margin-bottom: 1.5rem;
+}
+
+.home-instruction p{
+    color: var(--grey01, #282828);
+font-family: "Pretendard Variable";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 2rem */
+margin-bottom: 4.25rem;
+}
+
+.user-types {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2.25rem;
+  /* Ensure consistent padding, adjust as needed: */
+  padding: 0;
+}
+
+.user-types div {
+  width: 27.8125rem;
+  height: 26.5rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.10);
+  /* Remove horizontal margin to avoid double spacing */
+  margin: 0;
+}
+
+.user-types div img {
+  width: 100%;
+  height: 13.25rem;
+  object-fit: cover;
+}
+
+.user-types div .user-type-content {
+  padding: 1.5rem;
+}
+
+.user-types div .user-type-content h3 {
+  color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 2.6rem */
+    margin-left: 1rem;
+}
+
+.user-types div .user-type-content p {
+  color: var(--grey01, #282828);
+font-family: "Pretendard Variable";
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 1.8rem */
+padding-top: 0.5rem;
+margin-left: 1rem;
+}
+
+
+/* ================================================= */
+/* 작동 방식 영역 */
+/* ================================================= */
+
+
+.home-work {
+  padding: 5rem 2rem;
+  text-align: left;
+  padding: 10.3125rem 10.625rem;
+    display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  background: linear-gradient(180deg, #FFF 0%, #F2F2F2 100%);
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.work-header-left h2 {
+    padding-left: 10rem;
+    padding-bottom: 1.5rem;
+    color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 3.9rem */
+}
+
+.work-header-left p {
+    padding-left: 10rem;
+    padding-bottom: 2.44rem;
+    color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 2rem */
+}
+
+.work-more-button {
+  display: flex;
+    width: 8.75rem;
+    height: 3.125rem;
+    padding: 0.15819rem 0.26369rem;
+    margin-right: 7rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.52738rem;
+    flex-shrink: 0;
+    border-radius: 0.31644rem;
+    background: var(--orange-gradient, linear-gradient(315deg, #FFAF2F 0%, #FF6620 100%));
+    color: var(--white, #FFF);
+    font-family: "Pretendard Variable";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 1.8rem */
+}
+
+
+.work-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2.25rem;
+    padding-left:5rem;
+    padding-right:5rem;
+    align-items: center;
+    justify-items:center;
+    justify-content: center;
+    grid-auto-flow: row;
+}
+
+.work-card-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.25rem;
+  grid-column: 1 / -1;
+}
+
+
+.work-card {
+    width: 23.32726rem;
+    height: 23.7rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.10);
+    /* Remove horizontal margin to avoid double spacing */
+    margin: 0;
+}
+
+.work-card img {
+  width: 100%;
+  height: 13.25rem;
+  object-fit: cover;
+}
+
+.work-card .work-card-text {
+  padding: 1.5rem;
+}
+
+.work-card .work-card-text h3 {
+  color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 1.53138rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 2.6rem */
+    margin-left: 1rem;
+}
+
+.work-card .work-card-text p {
+  color: var(--grey01, #282828);
+font-family: "Pretendard Variable";
+font-size: 0.86144rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 1.8rem */
+padding-top: 0.5rem;
+margin-left: 1rem;
+}
+
+
+
+/* ================================================= */
+/* 고객사 영역 */
+/* ================================================= */
+
+
+.home-customer {
+  background: #f6f6f6;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.customer-carousel {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.customer-carousel div {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================================================= */
+/* CTA 링크 영역 */
+/* ================================================= */
+
+
+.home-inquiry-link {
+  background: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 21.75rem;
+  padding: 0;
+}
+
+.home-inquiry-link-box{
+    border-radius: 1.25rem;
+    background: var(--orange-gradient, linear-gradient(315deg, #FFAF2F 0%, #FF6620 100%));
+    display: flex;
+    width: 57.3125rem;
+    height: 12.3125rem;
+    padding: 3.1875rem 3.0625rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+
+.home-inquiry-link h3 {
+    color: var(--white, #FFF);
+    font-family: "Pretendard Variable";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 2.925rem */
+    text-align: left;
+    padding-right: 11rem;
+}
+
+.home-inquiry-link button {
+    display: flex;
+    width: 6.5rem;
+    height: 2.1875rem;
+    padding: 0.15819rem 0.73831rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.52738rem;
+
+    border-radius: 0.31644rem;
+}
+
+.link-brochure-button {
+    border-radius: 0.31644rem;
+    border: 0.844px solid var(--white, #FFF);
+    background: var(--white, #FFF);
+    color: var(--orange02, #FF6E37);
+    font-family: "Pretendard Variable";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 1.4rem */
+}
+
+.link-inquiry-button {
+    border-radius: 0.31644rem;
+    background: var(--grey01, #282828);
+    color: var(--white, #FFF);
+    font-family: "Pretendard Variable";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 1.4rem */
+}
