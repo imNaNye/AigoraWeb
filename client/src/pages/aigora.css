@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("/assets/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.aigora {
+  width: 100%;
+  font-family: "Pretendard Variable";
+}
+
+/* ================================================= */
+/* 오렌지색 부분 */
+/* ================================================= */
+
+.aigora-orange-section {
+    display: flex;
+    width: 100%;
+    height: 17.25rem;
+    padding: 6.25rem 23.375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    background: var(--orange-gradient, linear-gradient(315deg, #FFAF2F 0%, #FF6620 100%));
+}
+
+.aigora-orange-section h3 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Pretendard Variable";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 3.6rem */
+}
+
+/* ================================================= */
+/*섹션1~4 */
+/* ================================================= */
+.aigora-sec {
+    background: linear-gradient(180deg, #FFF 0%, #F2F2F2 100%);
+    padding-top: 10.44rem;
+    padding-bottom: 6rem;
+}
+
+.aigora-sec h3 {
+    color: var(--grey01, #282828);
+    font-family: "Pretendard Variable";
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 3.8rem */
+    padding-left: 20%;
+    padding-bottom : 5rem;
+}
+
+.aigora-sec p {
+    color: var(--orange02, #FF6E37);
+    font-family: "Pretendard Variable";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 2.275rem */
+    padding-left: 20%;
+    padding-bottom: 3rem;
+}
+
+.aigora-sec-image {
+    width: 60%;
+    margin-left: 20%;
+}
