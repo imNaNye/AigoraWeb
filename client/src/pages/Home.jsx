@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/NavBar"
 import MacVideo from "../components/MacVideo"
 import InquiryLinkFooter from "../components/InquiryLinkFooter"
 import Improving from "../components/Improving"
