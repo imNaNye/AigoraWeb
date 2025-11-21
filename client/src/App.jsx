@@ -19,6 +19,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Aigora />} />
         <Route path="/services/aigora" element={<Aigora />} />
