@@ -8,17 +8,27 @@ router.post('/', async (req, res) => {
     email,
     organization,
     job_grade,
-    request_type,
     opt_in,
   } = req.body;
+
+  // 필수 값 누락 검사
+  if (!client_name || !email || !organization) {
+    return res.status(400).json({ error: "필수 항목 누락" });
+  }
 
   try {
     const sql = `
       INSERT INTO profile_request 
-      (client_name, email, organization, job_grade, request_type, opt_in) 
-      VALUES (?, ?, ?, ?, ?, ?)
+      (client_name, email, organization, job_grade, opt_in) 
+      VALUES (?, ?, ?, ?, ?)
     `;
-    const values = [client_name, email, organization, job_grade, request_type, opt_in ? 1 : 0];
+    const values = [
+      client_name ?? null,
+      email ?? null,
+      organization ?? null,
+      job_grade ?? null,
+      opt_in ? 1 : 0
+    ];
     await pool.execute(sql, values);
     res.status(200).json({ message: "success" });
   } catch (err) {

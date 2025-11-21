@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("/assets/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
+
+.inquiry-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+  background: url('/assets/images/background.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+
+.inquiry-description {
+  flex: 1;
+  max-width: 500px;
+  margin-left: 10%;
+  margin-bottom: 25%;
+}
+
+.inquiry-description h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.inquiry-logo-box {
+  border-left: 4px solid #FF7A00;
+  padding-left: 1rem;
+}
+
+.inquiry-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FF7A00;
+}
+
+.inquiry-logo-box p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* InquiryForm styles */
+.inquiry-form {
+  flex: 1;
+  max-width: 600px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-right: 7%;
+}
+
+.inquiry-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: none;
+}
+
+.checkbox-row {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkbox-row label {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+button[type="submit"] {
+  padding: 0.9rem;
+  background: linear-gradient(90deg, #FF7A00, #FFAA4D);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #FF9900, #FFC266);
+}

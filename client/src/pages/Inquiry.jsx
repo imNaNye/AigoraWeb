@@ -1,4 +1,5 @@
 import InquiryForm from './InquiryForm';
+import './inquiry.css';
 
 export default function Inquiry() {
   return (

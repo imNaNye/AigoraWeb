@@ -19,10 +19,14 @@ export default function BrochureForm() {
   return (
   <div className="brochure-form">
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("client_name")} type="text" placeholder="성함" required />
+      <input {...register("client_name")} type="text" placeholder="성함*" required />
       <input {...register("organization")} type="text" placeholder="소속" />
       <input {...register("job_grade")} type="text" placeholder="직급" />
-      <input {...register("email")} placeholder="이메일" required type="email" />
+      <input {...register("email")} placeholder="이메일*" required type="email" />
+      <label>
+            <input type="checkbox" required/>
+            개인정보 수집 및 이용 동의*
+          </label>
       <label>
         <input type="checkbox" {...register("opt_in")} />
         마케팅 활용 및 광고 수신 동의
