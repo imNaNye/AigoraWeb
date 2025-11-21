@@ -3,8 +3,19 @@ import "../pages/home.css"
 export default function MacVideo(){
     return (
         <div className="home-video">
-            <img src="/assets/images/Apple iMac Retina.png" alt="동영상 프레임" />
-            {/* 실제 동영상 컴포넌트 삽입 예정 */}
+            <div className="home-video-frame">
+                <div className="home-video-inner">
+                    <video
+                        src="/assets/videos/promotionVideo.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="home-video-video"
+                    />
+                </div>
+                <img src="/assets/images/Apple iMac Retina.png" alt="동영상 프레임" className="home-video-frame-img" />
+            </div>
         </div>
     )
 }

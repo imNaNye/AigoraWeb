@@ -16,19 +16,18 @@ export default function BrochureForm() {
     }
   };
 
-  return (<div>
-    <h1 className="text-4xl text-blue-500">Tailwind 작동 테스트</h1>
+  return (
+  <div className="brochure-form">
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("client_name")} placeholder="이름" required />
+      <input {...register("client_name")} type="text" placeholder="성함" required />
+      <input {...register("organization")} type="text" placeholder="소속" />
+      <input {...register("job_grade")} type="text" placeholder="직급" />
       <input {...register("email")} placeholder="이메일" required type="email" />
-      <input {...register("organization")} placeholder="소속" />
-      <input {...register("job_grade")} placeholder="직급" />
-      <input {...register("request_type")} placeholder="요청 유형" />
       <label>
         <input type="checkbox" {...register("opt_in")} />
-        마케팅 수신 동의
+        마케팅 활용 및 광고 수신 동의
       </label>
-      <button type="submit">제출</button>
+      <button type="submit">소개서 신청하기</button>
     </form>
     </div>
   );

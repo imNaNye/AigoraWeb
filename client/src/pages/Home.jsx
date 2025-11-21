@@ -13,8 +13,14 @@ export default function Home(){
                     <h1>AI교육의 진화는<br />AIGORA와 함께 시작됩니다.</h1>
                     <p>AI가 진행하고, 사람은 몰입합니다.<br/>AIGORA는 토론과 참여로 완성되는 차세대 기업교육 플랫폼입니다.</p>
                     <div className = "intro-buttons">
-                        <button className = "intro-brochure-button">소개서 받기</button>
-                        <button className = "intro-inquiry-button">문의하기</button>
+                        <button
+                          className="intro-brochure-button"
+                          onClick={() => window.location.href = "/introduction/brochure"}
+                        >
+                          소개서 받기
+                        </button>
+                        <button className = "intro-inquiry-button"
+                        onClick={() => window.location.href = "/introduction/inquiry"}>문의하기</button>
                     </div>
                 </div>
                 <img src="/assets/images/ai-illust.png" alt="AI 캐릭터" />
@@ -68,7 +74,8 @@ export default function Home(){
                         <p>영상·퀴즈·토론을 하나의 흐름으로 연결하는 AI 교육 솔루션입니다.<br />
                         AIGORA는 학습 참여를 높이고, 교육자와 학습자 모두에게 새로운 경험을 제공합니다.</p>
                     </div>
-                    <button className="work-more-button">더 알아보기 →</button>
+                    <button className="work-more-button"
+                    onClick={() => window.location.href = "/services/aigora"}>더 알아보기 →</button>
                 </div>
 
                 <div className="work-cards">
@@ -114,14 +121,6 @@ export default function Home(){
 
             
             {/* 고객사 로고 및 후기 */}
-            {/* <div className="home-customer">
-                <h2>고객과 함께 성장하고 있습니다</h2>
-                <div className="customer-carousel">
-                    <div>CJ 도너스캠프</div>
-                    <div>CJ 도너스캠프</div>
-                    <div>CJ 도너스캠프</div>
-                </div>
-            </div> */}
             <Improving/>
 
 
