@@ -62,8 +62,9 @@ export default function Navbar() {
         <div className="language-toggle">
           <span className="active-lang">KR</span> <span className="divider">|</span> <span className="inactive-lang">EN</span>
         </div>
-        <button className="btn login-button">로그인</button>
-        <button className="btn inquiry-button">문의하기</button>
+        <Link to="/introduction/inquiry">
+          <button className="btn inquiry-button">문의하기</button>
+        </Link>
       </div>
     </nav>
   );
