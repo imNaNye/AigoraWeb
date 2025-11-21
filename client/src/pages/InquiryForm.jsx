@@ -7,7 +7,7 @@ export default function InquiryForm() {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post("http://localhost:4000/api/inquiry", data);
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/inquiry`, data);
       alert("제출이 완료되었습니다.");
       reset();
     } catch (err) {
